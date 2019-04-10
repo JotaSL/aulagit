@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Formulários</title>
+</head>
+<body>
+
+  <h1>Formulário - Cadastro de Funcionário</h1>
+
+<form accept-charset="utf-8" method="GET">
+  	Nome:<br>
+  	<input type="text" size="50" min="3" max="" placeholder="Digite o seu nome" required>
+
+<br><br>
+
+    Idade:<br>
+    <input type="number" placeholder="Idade" min="1" max="90">
+
+<br><br>
+
+    Senha:<br>
+    <input type="password" placeholder="Senha" required>
+
+<br><br>
+
+    Cargo:<br>
+    <input type="" value="Professora" readonly>
+
+<br><br>
+
+    Cargo:<br>
+    <input type="" value="Professora" disabled>
+
+<br><br>
+
+    Sexo:<br>   
+    M
+    <input type="radio" name="sexo" value="M">
+    F
+    <input type="radio" name="sexo" value="F">
+
+<br><br>
+
+   Períodos de aula:<br>
+   <input type="checkbox" name="manhã">Manhã
+   <input type="checkbox" name="tarde">Tarde
+   <input type="checkbox" name="noite" checked>Noite
+
+<br><br>
+
+   Cor preferida:<br>
+   <input type="color">
+
+<br><br>
+
+	<FIELDSET>
+		Data Nascimento:<br>
+		<input type="date" name="data">
+		<legend>DATAS:</legend>
+		<br>
+		Data e horario Cadastro:<br>
+		<input type="datetime-local" name="datahora">
+		<br><br>
+		Mes do Cadastro:<br>
+		<input type="month" name="mes">
+		<br><br>
+		Tempo Cadastrado:<br>
+		<input type="time" name="hour">
+		<br><br>
+		Semana do Cadastro:<br>
+		<input type="week" name="top">
+	</FIELDSET>
+	<br><br>
+	Capacitação:<br>	
+	<input type="range" name="range" id="raid" max="10" min="0" value="5" onchange="onRangeChange();"><span id="rangeId">5</span>
+	<br><br>
+	Observação:<br>
+	<textarea rows="7" style="font-size: 18px" cols="50" spellcheck="false"  >
+	</textarea>
+	<br><br>
+	Curso:
+	<select name="Cursinho">
+		<optgroup label="Jogos De Tabuleiro">
+		<option value="Minecraft">Minecraft Pro</option>
+		<option value="roblox">Roblox Pro</option>
+		<option value="Cs">Cs 1990 Pro</option>
+		<option value="campoMinado">campo minado Pro</option></optgroup>
+		<optgroup label="Jogadores de futbol">
+		<option value="Minecraft">Mchal jordan</option>
+		<option value="roblox">michael jackson</option>
+		<option value="Cs">venom extreme</option>
+		<option value="campoMinado">bruno ayub</option></optgroup>
+	</select>
+	<br><br>
+	Apelido:
+	<select name="fodac" size="6" multiple>
+		<option value="Minecraft">NEGAO</option>
+		<option value="roblox">PALMITO</option>
+		<option value="Cs">ZE GOTINHA DA PRETOBRAS</option>
+		<option value="campoMinado">SOMBRA 3D</option>
+		<option value="sd">Catapau</option>
+		<option value="x">Picolé de piche</option>
+	</select>
+	<br><br>
+
+	<input list="top">
+	<datalist id="top">
+		<optgroup label="Jogos De Tabuleiro">
+		<option value="Minecraft">Minecraft Pro</option>
+		<option value="roblox">Roblox Pro</option>
+		<option value="Cs">Cs 1990 Pro</option>
+		<option value="campoMinado">campo minado Pro</option></optgroup>
+		</datalist>
+	<br><br>
+	<input type="email" name="email">
+	<br><br>
+	<input type="search" name="procurar">
+	<br><br>
+	<input type="url" name="url">
+	<br><br>
+	<input type="file" name="file">
+	<br><br>
+	<input type="reset" name="Limpar">
+    <input type="submit" value="Salvar">
+    <input type="button" value="ok" onclick="alert('O DILMA')">
+
+    <script type="text/javascript">
+    	function onRangeChange(){
+    		document.getElementById("rangeId").innerText = document.getElementById("raid").value;
+    	}
+    </script>
+
+
+</form>
+</body>
+</html>
