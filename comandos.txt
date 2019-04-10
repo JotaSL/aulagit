@@ -1,0 +1,8 @@
+md aulagit
+cd aulagit
+git init
+touch texto.txt
+[editei pelo bloco de notas]
+git commit -m "Primeiro Commit"
+git remote add origin https://github.com/GumpFlash/aulagit.git
+git push -u origin master
